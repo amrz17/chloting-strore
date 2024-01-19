@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Integral CF";
+  src:
+    local("Integral CF Bold"),
+    local("Integral-CF-Bold"),
+    url("./assets/font/IntegralCF-Bold.woff2") format("woff2"),
+    url("./assets/font/IntegralCF-Bold.woff") format("woff"),
+    url("./assets/font/IntegralCF-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src:
+    url("./assets/font/satoshi/Satoshi-Regular.woff2") format("woff2"),
+    url("./assets/font/satoshi/Satoshi-Regular.woff") format("woff"),
+    url("./assets/font/satoshi/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src:
+    url("./assets/font/satoshi/Satoshi-Medium.woff2") format("woff2"),
+    url("./assets/font/satoshi/Satoshi-Medium.woff") format("woff"),
+    url("./assets/font/satoshi/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src:
+    url("./assets/font/satoshi/Satoshi-Bold.woff2") format("woff2"),
+    url("./assets/font/satoshi/Satoshi-Bold.woff") format("woff"),
+    url("./assets/font/satoshi/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
