@@ -13,7 +13,10 @@ export const Nav = () => {
           <button type="button" className="xl:hidden">
             <Menu size={35} />
           </button>
-          <Link href="/" className="text-black text-4xl font-extrabold">
+          <Link
+            href="/"
+            className="font-IntegralCf text-black text-4xl font-extrabold"
+          >
             SHOP.CO
           </Link>
         </div>
@@ -21,8 +24,12 @@ export const Nav = () => {
           <ul className="flex flex-row gap-8">
             {navLink.map((link) => (
               <li key={link.label}>
-                <Link href={link.href} className="text-lg">
+                <Link
+                  href={link.href}
+                  className="flex gap-1 font-SatoshiRegular text-xl"
+                >
                   {link.label}
+                  <img src={link.img} />
                 </Link>
               </li>
             ))}
@@ -38,7 +45,7 @@ export const Nav = () => {
           <input
             type="text"
             placeholder="Search for products..."
-            className="hidden sm:flex bg-gray-200 p-3 w-full rounded-r-full"
+            className="font-SatoshiRegular hidden sm:flex bg-gray-200 p-3 w-full rounded-r-full"
           />
         </div>
         <div className="flex md:gap-2">
