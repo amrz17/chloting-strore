@@ -11,11 +11,8 @@ import {
 
 const Hero = () => {
   return (
-    <section
-      className="flex flex-col w-screen h-screen
-      bg-gray-1 pt-20 lg:pt-24"
-    >
-      <div className="w-full md:h-[110hv] bg-gray-1">
+    <>
+      <div className="w-full bg-gray-1">
         <div className="flex flex-col mx-auto">
           <div
             className="flex flex-col w-full lg:absolute h-fit 
@@ -39,7 +36,7 @@ const Hero = () => {
               </p>
               <button
                 className=" btn md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg font-SatoshiMedium text-white lg:text-xl
-                 rounded-full bg-black md:text-sm"
+                 rounded-full bg-black md:text-sm hover:text-black hover:bg-white"
               >
                 Shop Now
               </button>
@@ -79,12 +76,12 @@ const Hero = () => {
           </div>
           <img
             src={star}
-            className="absolute w-20 top-[88%] right-4 md:top-[75%]  md:right-[25%] lg:top-[20%] lg:right-[7%]  xl:top-[20%] xl:right-[6%] 2xl:top-[23%] 2xl:right-[10%]"
+            className="absolute w-20 top-[75%] right-4 md:top-[75%]  md:right-[25%] lg:top-[20%] lg:right-[7%]  xl:top-[20%] xl:right-[6%] 2xl:top-[23%] 2xl:right-[10%]"
           />
           <img
             src={star}
             width={56}
-            className="absolute top-[100%] left-4 md:top-[88%] md:left-[28%] lg:top-[33%] lg:left-[55%] xl:top-[40%] xl:left-[60%] 2xl:top-[48%] 2xl:left-[58%] "
+            className="absolute top-[92%] left-4 md:top-[88%] md:left-[28%] lg:top-[33%] lg:left-[55%] xl:top-[40%] xl:left-[60%] 2xl:top-[48%] 2xl:left-[58%] "
           />
 
           <div className="md:hidden mx-auto bg-gray-1">
@@ -93,7 +90,7 @@ const Hero = () => {
           <img
             src={hero}
             className="relative hidden md:flex w-full xl:ml-10 2xl:mx-auto lg:pt-10  
-            bg-transparent md:right-[22%] lg:-right-3"
+            bg-transparent md:right-[22%] lg:right-0"
           />
 
           <div
@@ -112,7 +109,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

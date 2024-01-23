@@ -1,5 +1,27 @@
 import hero from "./Hero.png";
+//New Arrivals
 import heroMobile from "./Hero-Mobile.png";
+import tShirt from "./newArrivals/tShirt.png";
+import skinnyJins from "./newArrivals/skinnyJins.png";
+import checkShirt from "./newArrivals/checkShirt.png";
+import sleeveTshirt from "./newArrivals/sleveTshirt.png";
+
+//Top Selling
+import courageTshirt from "./topSelling/courageTshirt.jpg";
+import faddedJeans from "./topSelling/faddedSkinyJeans.jpg";
+import losseShort from "./topSelling/losseFitShort.jpg";
+import verticalShirt from "./topSelling/verticalShirt.jpg";
+
+//Sort By Style
+import casual from "./dressStyle/casual.jpg";
+import formal from "./dressStyle/formal.jpg";
+import party from "./dressStyle/party.jpg";
+import gym from "./dressStyle/gym.jpg";
+import casualLg from "./dressStyle/casualLg.jpg";
+import formalLg from "./dressStyle/formalLg.jpg";
+import partyLg from "./dressStyle/partyLg.jpg";
+import gymLg from "./dressStyle/gymLg.jpg";
+
 import versace from "./versace.svg";
 import zara from "./zara.svg";
 import gucci from "./gucci.svg";
@@ -11,6 +33,22 @@ import star from "./star.svg";
 export {
   hero,
   heroMobile,
+  tShirt,
+  skinnyJins,
+  checkShirt,
+  sleeveTshirt,
+  courageTshirt,
+  faddedJeans,
+  losseShort,
+  verticalShirt,
+  casual,
+  formal,
+  party,
+  gym,
+  casualLg,
+  formalLg,
+  partyLg,
+  gymLg,
   versace,
   gucci,
   zara,
