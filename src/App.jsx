@@ -2,7 +2,9 @@ import { DressStyles } from "./components/DressStyles";
 import Hero from "./components/Hero";
 import { Nav } from "./components/Nav";
 import { NewArrival } from "./components/NewArrival";
+import { Review } from "./components/Review";
 import { TopSelling } from "./components/TopSelling";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <NewArrival />
         <TopSelling />
         <DressStyles />
+        <Review />
+        <Footer />
       </section>
     </main>
   );

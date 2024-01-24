@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "gray-1": "#F2F0F1",
+        "yellow-1": "#FFC633",
       },
       fontFamily: {
         IntegralCf: "Integral CF",

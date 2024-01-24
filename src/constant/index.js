@@ -51,3 +51,50 @@ export const dressStyle = [
   { img: party, imgLg: partyLg, label: "party" },
   { img: gym, imgLg: gymLg, label: "gym" },
 ];
+
+export const review = [
+  {
+    name: "Sarah M.",
+    content: `"I'm blown away by the quality and style of the clothes i received from Shop.co. From casual wear to elegant dresses every piece i've bought has exceeded my expectations"`,
+  },
+  {
+    name: "Alex K.",
+    content: `"Finding clothes that align with my personal style used to be a challenge until i discovered Shop.co. The range of option they offer is truly remarkable, catering to a variety of tastes and occasions"`,
+  },
+  {
+    name: "James L.",
+    content: `"As someone who's always on the lookout for unique fashion pieces. I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends"`,
+  },
+  {
+    name: "Mooen",
+    content: `""As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”"`,
+  },
+];
+
+export const company = [
+  { href: "#About", label: "About" },
+  { href: "#Features", label: "Features" },
+  { href: "#Work", label: "Work" },
+  { href: "#Carrier", label: "Carrier" },
+];
+
+export const help = [
+  { href: "#CustomerSupport", label: "Customer Support" },
+  { href: "#DeliveryDetail", label: "Delivery Detail" },
+  { href: "#TermsConditions", label: "Terms & Conditions" },
+  { href: "#PrivacyPolicy", label: "Privacy Policy" },
+];
+
+export const faq = [
+  { href: "#Account", label: "Account" },
+  { href: "#ManageDeliveries", label: "Manage Deliveries" },
+  { href: "#Orders", label: "Orders" },
+  { href: "#Payments", label: "Payments" },
+];
+
+export const resources = [
+  { href: "#FreeEbooks", label: "Free eBooks" },
+  { href: "#DevelopmentTutorial", label: "Development Tutorial" },
+  { href: "#HowToBlog", label: "How to - Blog" },
+  { href: "#YoutubePlaylist", label: "Youtube Playlist" },
+];
