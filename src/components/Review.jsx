@@ -35,7 +35,9 @@ export const Review = () => {
               </h3>
               <img src={checked} className="items-center" />
             </div>
-            <p className="font-SatoshiRegular md:text-xl">{review.content}</p>
+            <p className="font-SatoshiRegular text-gray-500 md:text-xl">
+              {review.content}
+            </p>
           </div>
         ))}
       </div>

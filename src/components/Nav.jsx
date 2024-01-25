@@ -45,7 +45,8 @@ export const Nav = () => {
           <input
             type="text"
             placeholder="Search for products..."
-            className="font-SatoshiRegular hidden sm:flex bg-gray-200 p-3 w-full rounded-r-full"
+            className="font-SatoshiRegular hidden sm:flex bg-gray-200 p-3 w-full 
+            rounded-r-full"
           />
         </div>
         <div className="flex ">

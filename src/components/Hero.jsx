@@ -35,8 +35,8 @@ const Hero = () => {
                 <br className="flex md:hidden" /> cater to your sense of style.
               </p>
               <button
-                className=" btn md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg font-SatoshiMedium text-white lg:text-xl
-                 rounded-full bg-black md:text-sm hover:text-black hover:bg-white"
+                className="btn lg:z-10 md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg font-SatoshiMedium 
+                text-white lg:text-xl rounded-full bg-black md:text-sm hover:text-black hover:bg-white"
               >
                 Shop Now
               </button>

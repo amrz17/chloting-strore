@@ -1,3 +1,4 @@
+import { applePay, googlePay, master, payPal, visa } from "../assets/icons";
 import {
   arrowDown,
   casual,
@@ -97,4 +98,12 @@ export const resources = [
   { href: "#DevelopmentTutorial", label: "Development Tutorial" },
   { href: "#HowToBlog", label: "How to - Blog" },
   { href: "#YoutubePlaylist", label: "Youtube Playlist" },
+];
+
+export const payments = [
+  { img: visa, label: "visa" },
+  { img: master, label: "master card" },
+  { img: payPal, label: "pay pal" },
+  { img: applePay, label: "apple pay" },
+  { img: googlePay, label: "google pay" },
 ];
