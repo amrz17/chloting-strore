@@ -18,12 +18,13 @@ import {
   tShirt,
   verticalShirt,
 } from "../assets/images";
+import { DropDown } from "../components/DropDown";
 
 export const navLink = [
-  { href: "/", label: "Shop", img: arrowDown },
-  { href: "/onSale", label: "On Sale" },
-  { href: "/newArrivals", label: "New Arrivals" },
-  { href: "/brands", label: "Brands" },
+  { label: "Shop", img: arrowDown, onClick: DropDown },
+  { href: "/onSale", label: "On Sale", img: "" },
+  { href: "/newArrivals", label: "New Arrivals", img: "" },
+  { href: "/brands", label: "Brands", img: "" },
 ];
 
 export const saleStat = [

@@ -1,16 +1,25 @@
 import { CircleUserRound, Menu, Search, ShoppingCart } from "lucide-react";
 import { navLink } from "../constant";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { SideBar } from "./SideBar";
+import { DropDown } from "./DropDown";
 
 export const Nav = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openShop, setOpenShop] = useState(false);
+
+  const toogleSideBar = () => setOpenMenu(!openMenu);
+
+  const dropDown = () => setOpenShop(!openShop);
   return (
-    <header className="w-full absolute text-black">
+    <header className="w-full absolute text-black z-50">
       <nav
-        className="flex lg:gap-5 bg-white p-4 w-full justify-between
+        className="fixed flex lg:gap-5 2xl:gap-12 bg-white p-4 w-full justify-between
         xl:justify-center md:gap-10 items-center"
       >
         <div className="flex gap-3 sm:gap-6">
-          <button type="button" className="xl:hidden">
+          <button type="button" className="xl:hidden" onClick={toogleSideBar}>
             <Menu size={35} />
           </button>
           <Link
@@ -29,7 +38,9 @@ export const Nav = () => {
                   className="flex gap-1 font-SatoshiRegular text-xl"
                 >
                   {link.label}
-                  <img src={link.img} />
+                  <button onClick={dropDown}>
+                    <img src={link.img} />
+                  </button>
                 </Link>
               </li>
             ))}
@@ -67,6 +78,9 @@ export const Nav = () => {
           </div>
         </div>
       </nav>
+
+      {openMenu && <SideBar onClose={toogleSideBar} />}
+      {openShop && <DropDown />}
     </header>
   );
 };

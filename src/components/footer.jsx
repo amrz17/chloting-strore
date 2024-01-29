@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-white">
       <div className="flex justify-center bg-white py-8">
         <div
-          className="flex flex-col md:justify-between md:flex-row w-[358px] md:items-center 
+          className="flex flex-col md:justify-between md:flex-row w-[350px] md:items-center 
           lg:h-[180px] md:w-full bg-black gap-3 rounded-xl md:rounded-2xl p-6 md:mx-8"
         >
           <h1 className="font-IntegralCf text-white text-4xl lg:text-5xl">
@@ -41,7 +41,7 @@ export const Footer = () => {
         className="bg-gray-1 text-black md:flex 
         w-full pt-6 lg:gap-8"
       >
-        <div className="flex flex-col w-[380px] ml-4 gap-2 md:pt-5 ">
+        <div className="flex flex-col w-[380px] pl-4 gap-2 md:pt-5 ">
           <h2 className="font-IntegralCf text-3xl">SHOP.CO</h2>
           <p className="font-SatoshiRegular text-gray-500">
             We have clothes that suits your style and <br />
@@ -72,7 +72,7 @@ export const Footer = () => {
         </div>
         <div
           className="grid grid-cols-2 lg:flex  md:justify-between w-full gap-4 
-          mt-6 mx-4 pb-10"
+          py-10 pl-4"
         >
           <div className="flex flex-col lg:gap-y-2">
             <h3 className="font-SatoshiMedium text-lg">COMPANY</h3>
