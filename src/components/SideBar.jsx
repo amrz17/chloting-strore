@@ -2,6 +2,7 @@ import { X } from "lucide-react";
 import { navLink } from "../constant";
 import { useState } from "react";
 import { DropDown } from "./DropDown";
+import { Link } from "react-router-dom";
 
 export const SideBar = ({ isOpen, onClose }) => {
   const [openShop, setOpenShop] = useState(false);
@@ -25,12 +26,12 @@ export const SideBar = ({ isOpen, onClose }) => {
               className="text-black font-SatoshiRegular
               text-3xl underline"
             >
-              <a href={link.href} className="flex gap-2">
+              <Link to={link.to} className="flex gap-2">
                 {link.label}
                 <button onClick={dropDown}>
                   <img src={link.img} />
                 </button>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

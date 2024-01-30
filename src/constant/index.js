@@ -21,10 +21,10 @@ import {
 import { DropDown } from "../components/DropDown";
 
 export const navLink = [
-  { label: "Shop", img: arrowDown, onClick: DropDown },
-  { href: "/onSale", label: "On Sale", img: "" },
-  { href: "/newArrivals", label: "New Arrivals", img: "" },
-  { href: "/brands", label: "Brands", img: "" },
+  { to: "/", label: "Shop", img: arrowDown, onClick: DropDown },
+  { to: "/newArrivals", label: "New Arrivals", img: "" },
+  { to: "/styles", label: "Dress Styles", img: "" },
+  { to: "/brands", label: "Brands", img: "" },
 ];
 
 export const saleStat = [
@@ -48,10 +48,10 @@ export const topSellings = [
 ];
 
 export const dressStyle = [
-  { img: casual, imgLg: casualLg, label: "casual" },
-  { img: formal, imgLg: formalLg, label: "formal" },
-  { img: party, imgLg: partyLg, label: "party" },
-  { img: gym, imgLg: gymLg, label: "gym" },
+  { img: casual, imgLg: casualLg, label: "casual", to: "/casual" },
+  { img: formal, imgLg: formalLg, label: "formal", to: "/formal" },
+  { img: party, imgLg: partyLg, label: "party", to: "party" },
+  { img: gym, imgLg: gymLg, label: "gym", to: "/gym" },
 ];
 
 export const review = [

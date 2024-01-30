@@ -13,17 +13,17 @@ export const Nav = () => {
 
   const dropDown = () => setOpenShop(!openShop);
   return (
-    <header className="w-full absolute text-black z-50">
+    <header className="w-full absolute text-black z-50 ">
       <nav
-        className="fixed flex lg:gap-5 2xl:gap-12 bg-white p-4 w-full justify-between
-        xl:justify-center md:gap-10 items-center"
+        className="fixed flex lg:gap-5 2xl:gap-12 bg-white px-4 py-3 md:py-4 w-full justify-between
+        xl:justify-center md:gap-10 items-center border border-b-neutral-100"
       >
         <div className="flex gap-3 sm:gap-6">
           <button type="button" className="xl:hidden" onClick={toogleSideBar}>
             <Menu size={35} />
           </button>
           <Link
-            href="/"
+            to="/"
             className="font-IntegralCf text-black text-2xl md:text-4xl font-extrabold"
           >
             SHOP.CO
@@ -34,7 +34,7 @@ export const Nav = () => {
             {navLink.map((link) => (
               <li key={link.label}>
                 <Link
-                  href={link.href}
+                  to={link.to}
                   className="flex gap-1 font-SatoshiRegular text-xl"
                 >
                   {link.label}
@@ -50,18 +50,18 @@ export const Nav = () => {
           className="flex rounded-full items-center flex-shrink
           sm:w-[35rem] bg-none sm:bg-gray-200 "
         >
-          <button type="submit" className="p-2 hidden sm:flex">
+          <button type="submit" className="p-2 hidden md:flex">
             <Search className="text-black md:text-gray-600" />
           </button>
           <input
             type="text"
             placeholder="Search for products..."
-            className="font-SatoshiRegular hidden sm:flex bg-gray-200 p-3 w-full 
-            rounded-r-full"
+            className="font-SatoshiRegular hidden md:flex bg-gray-200 p-3 
+            w-full rounded-r-full"
           />
         </div>
         <div className="flex ">
-          <div className="flex items-center sm:hidden">
+          <div className="flex items-center md:hidden">
             <button type="button" className="p-2">
               <Search size={30} />
             </button>
