@@ -15,7 +15,7 @@ export const Nav = () => {
   return (
     <header className="w-full absolute text-black z-50 ">
       <nav
-        className="fixed flex lg:gap-5 2xl:gap-12 bg-white px-4 py-3 md:py-4 w-full justify-between
+        className="fixed flex lg:gap-5 2xl:gap-12 bg-white px-4 py-4 w-full justify-between
         xl:justify-center md:gap-10 items-center border border-b-neutral-100"
       >
         <div className="flex gap-3 sm:gap-6">

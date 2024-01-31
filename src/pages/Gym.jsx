@@ -2,10 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Gym = () => {
   return (
-    <section
-      className="flex flex-col w-full 
-      pt-16 lg:pt-24"
-    >
+    <section>
       <div
         className="text-lg breadcrumbs font-SatoshiRegular 
         text-black p-4"

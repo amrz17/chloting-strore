@@ -7,19 +7,32 @@ import { Formal } from "./pages/Formal";
 import { Party } from "./pages/Party";
 import { Gym } from "./pages/Gym";
 import { DressStyles } from "./components/DressStyles";
+import { Shop } from "./pages/Shop";
+import { Men } from "./pages/Men";
+import { Women } from "./pages/Women";
 
 function App() {
   return (
     <main className="bg-white">
       <Nav />
-      <Routes>
-        <Route path="/" exact={true} element={<HomePage />} />
-        <Route path="/styles" element={<DressStyles />} />
-        <Route path="/casual" element={<Casual />} />
-        <Route path="/formal" element={<Formal />} />
-        <Route path="/party" element={<Party />} />
-        <Route path="/gym" element={<Gym />} />
-      </Routes>
+      <section
+        className="flex flex-col w-full 
+      pt-20 lg:pt-24"
+      >
+        <Routes>
+          <Route path="/" exact={true} element={<HomePage />} />
+
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/men" element={<Men />} />
+          <Route path="/shop/women" element={<Women />} />
+
+          <Route path="/styles" element={<DressStyles />} />
+          <Route path="/casual" element={<Casual />} />
+          <Route path="/formal" element={<Formal />} />
+          <Route path="/party" element={<Party />} />
+          <Route path="/gym" element={<Gym />} />
+        </Routes>
+      </section>
       <Footer />
     </main>
   );

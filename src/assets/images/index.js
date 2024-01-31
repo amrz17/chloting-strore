@@ -22,6 +22,11 @@ import formalLg from "./dressStyle/formalLg.jpg";
 import partyLg from "./dressStyle/partyLg.jpg";
 import gymLg from "./dressStyle/gymLg.jpg";
 
+//causal
+import gradientTshirt from "./casual/gradienTshirt.png";
+import poloTipping from "./casual/poloWtipping.png";
+import blackStripedTshirt from "./casual/blackStriptedTshirt.png";
+
 import versace from "./versace.svg";
 import zara from "./zara.svg";
 import gucci from "./gucci.svg";
@@ -49,6 +54,9 @@ export {
   formalLg,
   partyLg,
   gymLg,
+  gradientTshirt,
+  poloTipping,
+  blackStripedTshirt,
   versace,
   gucci,
   zara,

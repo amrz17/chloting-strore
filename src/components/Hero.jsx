@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   calvin,
   gucci,
@@ -16,7 +17,7 @@ const Hero = () => {
         <div className="flex flex-col mx-auto">
           <div
             className="flex flex-col w-full lg:absolute h-fit 
-            gap-y-6 md:px-5 lg:px-8 xl:px-32 pt-14 lg:pt-20 2xl:pt-56 "
+            gap-y-6 md:px-5 lg:px-8 xl:px-32 pt-12 lg:pt-20 2xl:pt-56 "
           >
             <div className="flex flex-col text-center lg:text-start gap-6 lg:gap-8 xl:gap-10">
               <h1
@@ -34,12 +35,14 @@ const Hero = () => {
                 to bring out your individuality and
                 <br className="flex md:hidden" /> cater to your sense of style.
               </p>
-              <button
-                className="btn lg:z-10 md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg font-SatoshiMedium 
+              <Link to="/shop">
+                <button
+                  className="btn lg:z-10 md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg font-SatoshiMedium 
                 text-white lg:text-xl rounded-full bg-black md:text-sm hover:text-black hover:bg-white"
-              >
-                Shop Now
-              </button>
+                >
+                  Shop Now
+                </button>
+              </Link>
             </div>
             <div
               className="grid grid-cols-2 gap-y-2 lg:gap-y-0 lg:grid-cols-none text-center lg:text-start w-full 

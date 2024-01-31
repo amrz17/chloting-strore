@@ -6,10 +6,7 @@ import { TopSelling } from "../components/TopSelling";
 
 export const HomePage = () => {
   return (
-    <section
-      className="flex flex-col w-full 
-      pt-16 lg:pt-20"
-    >
+    <section>
       <Hero />
       <NewArrival />
       <TopSelling />

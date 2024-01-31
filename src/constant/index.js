@@ -1,6 +1,7 @@
 import { applePay, googlePay, master, payPal, visa } from "../assets/icons";
 import {
   arrowDown,
+  blackStripedTshirt,
   casual,
   casualLg,
   checkShirt,
@@ -8,11 +9,13 @@ import {
   faddedJeans,
   formal,
   formalLg,
+  gradientTshirt,
   gym,
   gymLg,
   losseShort,
   party,
   partyLg,
+  poloTipping,
   skinnyJins,
   sleeveTshirt,
   tShirt,
@@ -52,6 +55,18 @@ export const dressStyle = [
   { img: formal, imgLg: formalLg, label: "formal", to: "/formal" },
   { img: party, imgLg: partyLg, label: "party", to: "party" },
   { img: gym, imgLg: gymLg, label: "gym", to: "/gym" },
+];
+
+export const casualStyle = [
+  { img: gradientTshirt, label: "Gradient Graphic T-shirt", price: "$145" },
+  { img: poloTipping, label: "Polo with Tipping Details", price: "$180" },
+  { img: blackStripedTshirt, label: "Black Striped T-shirt", price: "$120" },
+  { img: skinnyJins, label: "Skinny Fit Jeans", price: "$240" },
+  { img: checkShirt, label: "Checkered Shirt", price: "$180" },
+  { img: sleeveTshirt, label: "Sleeve Striped T-shirt", price: "$130" },
+  { img: verticalShirt, label: "Vertical Striped Shirt", price: "$212" },
+  { img: courageTshirt, label: "Courage Graphic T-shirt", price: "$145" },
+  { img: losseShort, label: "Loose Fit Bermuda Shorts", price: "$80" },
 ];
 
 export const review = [
