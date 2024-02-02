@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { casualStyle } from "../constant";
 import { filter } from "../assets/icons";
+import { useState } from "react";
+import { Filters } from "../components/Filters";
 
 export const Casual = () => {
+  const [onfilter, setOnFilter] = useState(false);
+
+  const handleClick = () => setOnFilter(!onfilter);
+
   return (
     <section>
       <div
@@ -23,8 +29,18 @@ export const Casual = () => {
         <span className="font-SatoshiRegular text-sm">
           Showing 1-10 of 100 Product
         </span>
-        <button className="bg-gray-1 w-[35px] h-[35px] rounded-full">
-          <img src={filter} color="black" size={20} className="mx-auto " />
+        <button
+          type="button"
+          onClick={handleClick}
+          className="bg-gray-1 w-[35px] h-[35px] rounded-full"
+        >
+          <img
+            src={filter}
+            color="black"
+            size={20}
+            className="mx-auto "
+            onClick={handleClick}
+          />
         </button>
       </div>
       <div className="grid grid-cols-2 p-2 gap-4 ">
@@ -54,6 +70,8 @@ export const Casual = () => {
           Next
         </button>
       </div>
+
+      {onfilter && <Filters onClose={handleClick} />}
     </section>
   );
 };
