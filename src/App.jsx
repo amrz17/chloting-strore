@@ -10,6 +10,7 @@ import { DressStyles } from "./components/DressStyles";
 import { Shop } from "./pages/Shop";
 import { Men } from "./pages/Men";
 import { Women } from "./pages/Women";
+import { Cart } from "./pages/Cart";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/men" element={<Men />} />
           <Route path="/shop/women" element={<Women />} />
+
+          <Route path="/cart" element={<Cart />} />
 
           <Route path="/styles" element={<DressStyles />} />
           <Route path="/casual" element={<Casual />} />

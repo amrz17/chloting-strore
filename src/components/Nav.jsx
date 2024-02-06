@@ -67,9 +67,11 @@ export const Nav = () => {
             </button>
           </div>
           <div className="flex items-center">
-            <button type="button" className="p-2">
-              <ShoppingCart size={30} className="md:size-[35px]" />
-            </button>
+            <Link to="/cart">
+              <button type="button" className="p-2">
+                <ShoppingCart size={30} className="md:size-[35px]" />
+              </button>
+            </Link>
           </div>
           <div className="flex items-center">
             <button type="button" className="p-2">
