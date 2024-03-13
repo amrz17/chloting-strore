@@ -1,10 +1,12 @@
 import { X } from "lucide-react";
-import { navLink } from "../constant";
+import { navLink } from "../../constant";
 import { useState } from "react";
-import { DropDown } from "./DropDown";
 import { Link } from "react-router-dom";
+import PropType from "prop-types";
+import DropDown from "./DropDown";
 
-export const SideBar = ({ isOpen, onClose }) => {
+export const SideBar = (prop) => {
+  const { isOpen, onClose } = prop;
   const [openShop, setOpenShop] = useState(false);
 
   const dropDown = () => setOpenShop(!openShop);
@@ -40,4 +42,8 @@ export const SideBar = ({ isOpen, onClose }) => {
       {openShop && <DropDown />}
     </div>
   );
+};
+
+SideBar.proptype = {
+  prop: PropType.node,
 };

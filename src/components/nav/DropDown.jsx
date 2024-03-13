@@ -1,4 +1,4 @@
-export const DropDown = () => {
+const DropDown = () => {
   return (
     <div
       className="relative -top-52 xl:fixed z-50 text-black
@@ -18,3 +18,5 @@ export const DropDown = () => {
     </div>
   );
 };
+
+export default DropDown;

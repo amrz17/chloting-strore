@@ -1,6 +1,8 @@
 import { ChevronRight, X } from "lucide-react";
+import PropType from "prop-types";
 
-export const Filters = ({ isOpen, onClose }) => {
+export const Filters = (prop) => {
+  const { isOpen, onClose } = prop;
   return (
     <div
       className={`${
@@ -157,4 +159,8 @@ export const Filters = ({ isOpen, onClose }) => {
       </div>
     </div>
   );
+};
+
+Filters.prototype = {
+  prop: PropType.node,
 };

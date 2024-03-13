@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { Nav } from "./components/Nav";
 import { HomePage } from "./pages/HomePage";
 import { Casual } from "./pages/Casual";
 import { Footer } from "./components/Footer";
@@ -11,6 +10,8 @@ import { Shop } from "./pages/Shop";
 import { Men } from "./pages/Men";
 import { Women } from "./pages/Women";
 import { Cart } from "./pages/Cart";
+import DetailProduct from "./pages/DetailProduct";
+import Nav from "./components/nav/Nav";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Nav />
       <section
         className="flex flex-col w-full 
-      pt-20 lg:pt-24"
+      pt-20 lg:pt-20"
       >
         <Routes>
           <Route path="/" exact={true} element={<HomePage />} />
@@ -26,6 +27,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/men" element={<Men />} />
           <Route path="/shop/women" element={<Women />} />
+
+          <Route path="/detailProduct/:id" element={<DetailProduct />} />
 
           <Route path="/cart" element={<Cart />} />
 

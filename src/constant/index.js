@@ -21,7 +21,7 @@ import {
   tShirt,
   verticalShirt,
 } from "../assets/images";
-import { DropDown } from "../components/DropDown";
+import DropDown from "../components/nav/DropDown";
 
 export const navLink = [
   { to: "/", label: "Shop", img: arrowDown, onClick: DropDown },
@@ -37,17 +37,22 @@ export const saleStat = [
 ];
 
 export const newArrivals = [
-  { img: tShirt, label: "T-shirt with Tape Details", price: "$120" },
-  { img: skinnyJins, label: "Skinny Fit Jeans", price: "$240" },
-  { img: checkShirt, label: "Checkered Shirt", price: "$180" },
-  { img: sleeveTshirt, label: "Sleeve Striped T-shirt", price: "$130" },
+  { id: 1, img: tShirt, label: "T-shirt with Tape Details", price: "$120" },
+  { id: 2, img: skinnyJins, label: "Skinny Fit Jeans", price: "$240" },
+  { id: 3, img: checkShirt, label: "Checkered Shirt", price: "$180" },
+  { id: 4, img: sleeveTshirt, label: "Sleeve Striped T-shirt", price: "$130" },
 ];
 
 export const topSellings = [
-  { img: verticalShirt, label: "Vertical Striped Shirt", price: "$212" },
-  { img: courageTshirt, label: "Courage Graphic T-shirt", price: "$145" },
-  { img: losseShort, label: "Loose Fit Bermuda Shorts", price: "$80" },
-  { img: faddedJeans, label: "Faded Skinny Jeans", price: "$210" },
+  { id: 5, img: verticalShirt, label: "Vertical Striped Shirt", price: "$212" },
+  {
+    id: 6,
+    img: courageTshirt,
+    label: "Courage Graphic T-shirt",
+    price: "$145",
+  },
+  { id: 7, img: losseShort, label: "Loose Fit Bermuda Shorts", price: "$80" },
+  { id: 8, img: faddedJeans, label: "Faded Skinny Jeans", price: "$210" },
 ];
 
 export const dressStyle = [

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   calvin,
   gucci,
@@ -8,7 +7,8 @@ import {
   star,
   versace,
   zara,
-} from "../assets/images";
+} from "../../assets/images";
+import Button from "../btn/Button";
 
 const Hero = () => {
   return (
@@ -35,14 +35,13 @@ const Hero = () => {
                 to bring out your individuality and
                 <br className="flex md:hidden" /> cater to your sense of style.
               </p>
-              <Link to="/shop">
-                <button
-                  className="btn lg:z-10 md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg font-SatoshiMedium 
-                text-white lg:text-xl rounded-full bg-black md:text-sm hover:text-black hover:bg-white"
-                >
-                  Shop Now
-                </button>
-              </Link>
+              <Button
+                type="button"
+                variant="lg:z-10 md:btn-lg w-[75%] lg:w-1/3 mx-auto lg:mx-0 lg:btn-lg
+                text-white lg:text-xl bg-black md:text-sm hover:text-black hover:bg-white"
+              >
+                Shop Now
+              </Button>
             </div>
             <div
               className="grid grid-cols-2 gap-y-2 lg:gap-y-0 lg:grid-cols-none text-center lg:text-start w-full 

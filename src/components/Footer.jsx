@@ -1,5 +1,6 @@
 import { Facebook, Github, Instagram, Mail, Twitter } from "lucide-react";
 import { company, faq, help, payments, resources } from "../constant";
+import Button from "./btn/Button";
 
 export const Footer = () => {
   return (
@@ -28,12 +29,12 @@ export const Footer = () => {
             rounded-r-full hover:border-black"
               />
             </div>
-            <button
+            <Button
               type="button"
-              className="btn hover:text-white hover:border-white text-black w-full bg-white rounded-full"
+              variant="btn hover:text-white hover:border-white text-black w-full bg-white rounded-full"
             >
               Subscribe to Newslatter
-            </button>
+            </Button>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import { CircleUserRound, Menu, Search, ShoppingCart } from "lucide-react";
-import { navLink } from "../constant";
+import { navLink } from "../../constant";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { SideBar } from "./SideBar";
-import { DropDown } from "./DropDown";
+import DropDown from "./DropDown";
 
-export const Nav = () => {
+const Nav = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [openShop, setOpenShop] = useState(false);
 
@@ -86,3 +86,5 @@ export const Nav = () => {
     </header>
   );
 };
+
+export default Nav;
